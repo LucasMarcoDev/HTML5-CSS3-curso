@@ -12,8 +12,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: black;
+        }
         td,th{
             border: 1px solid black;
             padding: 10px;
@@ -23,15 +29,18 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgray
-            ;
+            background-color: lightgray;
         }
         thead,tfoot{
             background-color: gray;
             color: white;
         }
 
-        .num{
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        td.num{
             text-align: right;
         }
     </style>
