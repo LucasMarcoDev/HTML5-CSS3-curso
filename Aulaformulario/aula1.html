@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulario</h1>
-    <form action="cadastro.php" autocomplete="off" >
+    <form action="cadastro.php" method="get" autocomplete="off" >
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome: </label>
@@ -22,3 +22,8 @@
     </form>
 </body>
 </html>
+
+<!-- 
+Metodo de envio de formulario, metodo padrao GET
+use GET quando o dado nao for sensivel, ele tem limite de 3 mil bites nao usar get se passar disso, 
+Use o Post para dados sensiveis, exemplo senhas, numero de CPF, etc. Envio de imagens,arquivos. -->
