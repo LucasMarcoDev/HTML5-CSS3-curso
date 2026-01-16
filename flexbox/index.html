@@ -7,7 +7,9 @@
     <style>
         div.container{
             background-color: lightsalmon;
+            height: 100px;
             display: flex;
+          flex-flow: column wrap-reverse;
         }
 
         div.item
@@ -21,13 +23,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
     </div>
 </body>
 </html>
@@ -36,4 +38,16 @@
     flex direction: row-reverse troca os itens em row vemos da esquerda pra direita 
     no row-reverse deixa da direita pra esquerda
     flex-direction: column deixa os itens de cima para baixo
-    flex-direction: column-reverse  os itens ficam de baixo para cima  -->
+    flex-direction: column-reverse  os itens ficam de baixo para cima 
+    
+    flex-wrap = nowrap ele n quebra e encolhe o máximo possivel
+
+
+flex-wrap: wrap ele quebra linha e joga o ultimo elemento no cross axis
+
+flex-wrap: wrap-reverse ele faz o contrario do wrap ele joga o ultimo itewm para cima
+
+
+flex-flow e a mistura do flex-direction + flex-wrap onde podemos usar os dois ao mesmo tempo 
+
+Exemplo:flex-flow: row nowrap-->
